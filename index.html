@@ -1,0 +1,388 @@
+
+<html>
+
+<header id="header">
+  
+  <div class="logo">
+    <img src="https://i.ytimg.com/vi/JGaBU5cKluU/maxresdefault.jpg" alt="logo, a plumbus" id="header-img">
+  </div>
+
+  <nav id="nav-bar">
+    <ul class="nav header-nav">
+      <li class="nav-link nav-link1"><a href="#features">Features</a></li>
+      <li class="nav-link nav-link2"><a href="#video">How It Works</a></li>
+      <li class="nav-link nav-link3"><a href="#pricing">Pricing</a></li>
+    </ul>
+  </nav>
+
+
+
+<style>
+
+@import url("https://fonts.googleapis.com/css?family=Comic+Sans|Open+Sans");
+.thetop {
+  position: absolute;
+  left: -10000px;
+  width: 1px;
+  height: 1px;
+  top: auto;
+  overflow: hidden;
+  
+}
+html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  
+}
+body {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: white;
+}
+header {
+  background-color: #000000; 
+  width: 100%;
+  flex-shrink: 0;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5vw 6vw;
+  color: 	#f98b88;
+}
+h1 {
+  margin: 0;
+  font-size: 1em;
+  font-color: #f98b88;
+}
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+#header-img {
+  min-width: 5em;
+  width: 12vw;
+  max-width: 100%;
+  height: 100px;
+}
+
+.slogan {
+  font-size: 1.5em;
+  font-family: "Comic Sans", cursive;
+  letter-spacing: 0.1em;
+  color: #dd2c00;
+}
+#email {
+  padding: 0.3vw;
+  margin-right: 0.5vw;
+}
+.header-nav {
+  padding-right: 1em;
+}
+@media (min-width: 710px) {
+  h1 {
+    font-size: 1.5em;
+  }
+  .nav {
+    display: flex;
+    height: auto;
+  }
+  .header-nav {
+    padding-right: 10em;
+  }
+}
+
+.nav li {
+  list-style: none;
+}
+.nav li:not(:last-child) {
+  margin-right: 3vw;
+}
+.nav-link a {
+  color: 	#f98b88;
+  text-decoration: none;
+  position: relative;
+}
+.nav-link a::after {
+  content: "";
+  opacity: 0;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 10px;
+  height: 1px;
+  background-color: #f98b88;
+  transition-property: transform;
+  transition-duration: 0.5s;
+}
+.nav-link a:hover::after {
+  opacity: 1;
+  transform: scaleX(5);
+}
+.nav-link1 a:hover::after {
+  left: 50%;
+  transform: scaleX(6.5);
+}
+.nav-link2 a:hover::after {
+  left: 50%;
+  transform: scaleX(10);
+}
+.nav-link3 a:hover::after {
+  left: 50%;
+  transform: scaleX(5);
+}
+.btn {
+  background-color: #ff9100;
+  background: linear-gradient(
+    to bottom,
+    #f6cf92 0%,
+    #f6b092 50%,
+    #f6a192 51%,
+    #f6c492 100%
+  );
+  padding: 1.5vw;
+  border: none;
+}
+@media (min-width: 710px) {
+  .btn {
+    padding: 0.5vw;
+    border: none;
+  }
+}
+main {
+  flex-shrink: 0;
+  padding-top: 6vw;
+  padding: 6em 6vw 0 6vw;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#video {
+  max-width: 100%;
+}
+.video {
+  margin: 2.5vw 0;
+}
+.features {
+  text-align: left;
+  margin: 2.5vw 0;
+}
+.feature:not(:last-child) {
+  margin-bottom: 3vw;
+}
+.feature::before {
+  content: "";
+  display: block;
+  float: left;
+  margin-right: 3vw;
+  width: 5vw;
+  height: 5vw;
+  background-size: contain;
+}
+
+.feature1::before {
+  background-image: url("https://png.icons8.com/ios/50/EA1010/plasma-ball.png");
+}
+.feature2::before {
+  background-image: url("https://png.icons8.com/wired/50/EA1010/claw-machine.png");
+}
+.feature3::before {
+  background-image: url("https://png.icons8.com/wired/50/EA1010/man-with-money.png");
+}
+
+.feature4::before {
+  background-image: url("https://png.icons8.com/wired/50/EA1010/yellowstone.png");
+}
+.feature5::before {
+  background-image: url("https://mystickermania.com/cdn/stickers/rick-and-morty/sticker_2060.png");
+}
+
+
+
+.pricing {
+  margin: 2.5vw 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.item {
+  text-align: center;
+  border: 1px solid #e0e0e0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-shrink: 0;
+}
+.item:not(:last-child) {
+  margin-bottom: 0vw;
+}
+.item-img {
+  max-width: 100%;
+  height: auto;
+}
+.item h3 {
+  margin: 1vw 0;
+}
+@media (min-width: 710px) {
+  .pricing {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .item {
+    margin-bottom: 0;
+  }
+  .item-img {
+    width: 15vw;
+    min-width: 150px;
+    max-width: 100%;
+    height: auto;
+  }
+  .item h3 {
+    margin: 1vw 0;
+  }
+}
+.price {
+  font-weight: bold;
+}
+.pricing-btn {
+  width: 100%;
+  
+}
+
+.btn:hover {
+  filter: saturate(1.5);
+}
+footer {
+  background-color: #000000; 
+  text-align: right;
+  padding-right: 6vw;
+}
+.footer-nav {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 0;
+  font-size: 16px;
+}
+.footer-nav-link a {
+  color: 	#f98b88;
+  text-decoration: none;
+}
+.footer-nav-link a:hover {
+  font-weight: bold;
+}
+.copyright {
+  margin: 0.5vw 0;
+  font-size: 0.7em;
+  color: 	#f98b88;
+}
+
+
+</style>
+
+
+
+
+
+
+
+</header>
+
+<main>
+  <form action="" id="form">
+     <p class="slogan">No household is complete without a plumbus!</p>
+    
+    
+ <form id="form" action="https://www.freecodecamp.com/email-submit">
+      <input
+        name="email"
+        id="email"
+        type="email"
+        placeholder="Enter your email address"
+        required
+      />
+      <input id="submit" type="submit" value="Submit" class="btn" />
+    </form>
+  
+  
+  <section class="features" id="features">
+    <h2 class="thetop">Features</h2>
+    <div class="feature feature1">
+    <h3>Made from 100% materials</h3>
+    <p>This is made up of stuff.</p>
+     </div>
+    <div class="feature feature2">
+    <h3>Cute Distractions?!</h3>
+    <p>Rip the head off of this teddy bear.</p>
+      </div>
+    
+        <div class="feature feature3">
+    <h3>Make it rain!</h3>
+    <p>Become a popular human that everyone will want to be around.</p>
+      </div>
+        <div class="feature feature4">
+    <h3>Destroy your enemies</h3>
+    <p>Bring on the apoloclypse.</p>
+      </div>
+      <div class="feature feature5">
+    <h3>Escape</h3>
+    <p>Oops... just mosey on over to another dimension.</p>
+        </div>
+  </section>
+  
+  
+  <section class="video">
+    <h2 class="thetop">How It's Made'</h2>
+    <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/eMJk4y9NGvE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+  </section>
+  <section class="pricing" id="pricing">
+    <h2 class="thetop">Pricing</h2>
+    <section class="item">
+      <h3>Silver</h3>
+      <div><img class="item-img" src="https://www.hawkin.com/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/e/4/e46531_800.jpg" alt="silver"></div>
+      <div class="price">$79.99</div>
+      <button class="btn pricing-btn">Buy Now</button>
+    </section>
+
+    <section  class="item">
+      <h3>Bronze</h3>
+      <div><img class="item-img" src="https://www.hawkin.com/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/e/4/e46531_800.jpg" alt="bronze"></div>
+      <div class="price">$89.99</div>
+      <button class="btn pricing-btn">Buy Right Now</button>
+    </section>
+
+    <section  class="item">
+      <h3>Gold</h3>
+      <div><img class="item-img" src="https://www.hawkin.com/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/e/4/e46531_800.jpg" alt="gold"></div>
+      <div class="price">$99.99</div>
+      <button class="btn pricing-btn">OMG JUST BUY IT</button>
+    </section>
+  </section>
+    
+</main>
+  
+  
+<footer>
+  <nav>
+    <ul class="nav footer-nav">
+      <li class="footer-nav-link"><a href="#">Privacy</a></li>
+      <li class="footer-nav-link"><a href="#">Terms</a></li>
+      <li class="footer-nav-link"><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+  <p class="copyright">Copyright of Plumbubo Prime 51b</p>
+</footer>
+
+</html>
